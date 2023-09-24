@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		4C6D23E12ABD5AAE006C477F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23E02ABD5AAE006C477F /* AppDelegate.swift */; };
 		4C6D23E32ABD5AAE006C477F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23E22ABD5AAE006C477F /* SceneDelegate.swift */; };
-		4C6D23E52ABD5AAE006C477F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23E42ABD5AAE006C477F /* ViewController.swift */; };
+		4C6D23E52ABD5AAE006C477F /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23E42ABD5AAE006C477F /* TaskViewController.swift */; };
 		4C6D23EA2ABD5AAF006C477F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6D23E92ABD5AAF006C477F /* Assets.xcassets */; };
 		4C6D23ED2ABD5AAF006C477F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6D23EB2ABD5AAF006C477F /* LaunchScreen.storyboard */; };
 		4C6D23F82ABD5AAF006C477F /* usket_RxDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23F72ABD5AAF006C477F /* usket_RxDataSourceTests.swift */; };
 		4C6D24022ABD5AB0006C477F /* usket_RxDataSourceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D24012ABD5AB0006C477F /* usket_RxDataSourceUITests.swift */; };
 		4C6D24042ABD5AB0006C477F /* usket_RxDataSourceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D24032ABD5AB0006C477F /* usket_RxDataSourceUITestsLaunchTests.swift */; };
+		4CBA59762AC018A600B2ADBA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA59752AC018A600B2ADBA /* Task.swift */; };
+		4CBA59782AC018D800B2ADBA /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA59772AC018D800B2ADBA /* TaskViewModel.swift */; };
+		4CBA597B2AC018FC00B2ADBA /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 4CBA597A2AC018FC00B2ADBA /* RxCocoa */; };
+		4CBA597D2AC018FC00B2ADBA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4CBA597C2AC018FC00B2ADBA /* RxSwift */; };
+		4CBA59802AC0191800B2ADBA /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 4CBA597F2AC0191800B2ADBA /* RxDataSources */; };
+		4CBA59832AC01AED00B2ADBA /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBA59822AC01AED00B2ADBA /* TaskCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +44,7 @@
 		4C6D23DD2ABD5AAE006C477F /* usket.RxDataSource.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = usket.RxDataSource.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6D23E02ABD5AAE006C477F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C6D23E22ABD5AAE006C477F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4C6D23E42ABD5AAE006C477F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C6D23E42ABD5AAE006C477F /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		4C6D23E92ABD5AAF006C477F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C6D23EC2ABD5AAF006C477F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C6D23EE2ABD5AAF006C477F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +53,9 @@
 		4C6D23FD2ABD5AB0006C477F /* usket.RxDataSourceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = usket.RxDataSourceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6D24012ABD5AB0006C477F /* usket_RxDataSourceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usket_RxDataSourceUITests.swift; sourceTree = "<group>"; };
 		4C6D24032ABD5AB0006C477F /* usket_RxDataSourceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usket_RxDataSourceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4CBA59752AC018A600B2ADBA /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		4CBA59772AC018D800B2ADBA /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		4CBA59822AC01AED00B2ADBA /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CBA59802AC0191800B2ADBA /* RxDataSources in Frameworks */,
+				4CBA597D2AC018FC00B2ADBA /* RxSwift in Frameworks */,
+				4CBA597B2AC018FC00B2ADBA /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +111,9 @@
 			children = (
 				4C6D23EE2ABD5AAF006C477F /* Info.plist */,
 				4C6D24102ABD5ABA006C477F /* Application */,
-				4C6D23E42ABD5AAE006C477F /* ViewController.swift */,
+				4CBA59722AC0187B00B2ADBA /* Model */,
+				4CBA59742AC0189100B2ADBA /* View */,
+				4CBA59732AC0188600B2ADBA /* ViewModel */,
 			);
 			path = usket.RxDataSource;
 			sourceTree = "<group>";
@@ -132,6 +146,39 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		4CBA59722AC0187B00B2ADBA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4CBA59752AC018A600B2ADBA /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4CBA59732AC0188600B2ADBA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4CBA59772AC018D800B2ADBA /* TaskViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4CBA59742AC0189100B2ADBA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C6D23E42ABD5AAE006C477F /* TaskViewController.swift */,
+				4CBA59812AC01ADF00B2ADBA /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4CBA59812AC01ADF00B2ADBA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4CBA59822AC01AED00B2ADBA /* TaskCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +195,11 @@
 			dependencies = (
 			);
 			name = usket.RxDataSource;
+			packageProductDependencies = (
+				4CBA597A2AC018FC00B2ADBA /* RxCocoa */,
+				4CBA597C2AC018FC00B2ADBA /* RxSwift */,
+				4CBA597F2AC0191800B2ADBA /* RxDataSources */,
+			);
 			productName = usket.RxDataSource;
 			productReference = 4C6D23DD2ABD5AAE006C477F /* usket.RxDataSource.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +272,10 @@
 				Base,
 			);
 			mainGroup = 4C6D23D42ABD5AAE006C477F;
+			packageReferences = (
+				4CBA59792AC018FC00B2ADBA /* XCRemoteSwiftPackageReference "RxSwift" */,
+				4CBA597E2AC0191800B2ADBA /* XCRemoteSwiftPackageReference "RxDataSources" */,
+			);
 			productRefGroup = 4C6D23DE2ABD5AAE006C477F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -262,8 +318,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C6D23E52ABD5AAE006C477F /* ViewController.swift in Sources */,
+				4CBA59762AC018A600B2ADBA /* Task.swift in Sources */,
+				4C6D23E52ABD5AAE006C477F /* TaskViewController.swift in Sources */,
 				4C6D23E12ABD5AAE006C477F /* AppDelegate.swift in Sources */,
+				4CBA59782AC018D800B2ADBA /* TaskViewModel.swift in Sources */,
+				4CBA59832AC01AED00B2ADBA /* TaskCell.swift in Sources */,
 				4C6D23E32ABD5AAE006C477F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,6 +659,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4CBA59792AC018FC00B2ADBA /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		4CBA597E2AC0191800B2ADBA /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4CBA597A2AC018FC00B2ADBA /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CBA59792AC018FC00B2ADBA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		4CBA597C2AC018FC00B2ADBA /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CBA59792AC018FC00B2ADBA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		4CBA597F2AC0191800B2ADBA /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CBA597E2AC0191800B2ADBA /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4C6D23D52ABD5AAE006C477F /* Project object */;
 }
